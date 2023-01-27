@@ -1,0 +1,26 @@
+{
+  "name": "jalisco_turism",
+  "version": "1.0.0",
+  "description": "Jalisco's turism web page, fake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compileSass": "sass --watch css/scss/app.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinsmake/jalisco_turism.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Enrique Vinsmake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinsmake/jalisco_turism/issues"
+  },
+  "homepage": "https://github.com/vinsmake/jalisco_turism#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
