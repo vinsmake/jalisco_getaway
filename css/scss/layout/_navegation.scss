@@ -1,0 +1,64 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background: $interaction--background;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 5px 5px #11161C; //background shadow
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    height: 3rem;
+    margin: 0;
+
+    a {
+        color: $white;
+    }
+
+    .header__logo--a {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
+        .header__logo--src {
+        height: 100%;
+        margin-right: 10px;
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        a{
+            padding: 0.5rem;
+            border: 2px solid transparent;
+
+            &:hover {
+                background-color: $interaction--hover;
+                border: 2px solid $interaction--margin;
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+button {
+    padding: 0.5rem;
+    background: $interaction--background;
+    border: 2px solid $interaction--margin;
+    margin: 0.5rem;
+    border-radius: 90px;
+    color: white;
+
+    &:hover {
+                background-color: $interaction--hover;
+                cursor: pointer;
+    }
+}
+
