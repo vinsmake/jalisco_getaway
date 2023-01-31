@@ -1,9 +1,67 @@
+$background--dark: #11161C;
+$bar--dark: #161E29;
+$section--dark: #1A2432;
+$section--shadow: 0px 4px 100px rgba(190, 185, 182, 0.1); /* this is a box-shadow valor */
+$white: #ffffff;
+
 $sky: #7EB6D9;
+$night: #082161;
+$midnight: #041134;
 $green: #667302;
-$yellow: #F29F05;
-$orange: #F28705;
-$brown: #A68160;
+$yellow: #FEC93F;
+$yellow--sepia: #FEA212;
+$orange: #ce4126;
+$red: #ca2801;
+$brown: #9B8060;
+$brown--hard: #826249;
+$brown--light: #B7A485;
+$brown--sepia: #AA6000;
+$brick--light: #FF883E;
+$brick--hard: #FF6638;
+
+
+/* https://fonts.google.com/specimen/Cinzel?category=Serif
+font-family: 'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+/* https://fonts.google.com/specimen/Plus+Jakarta+Sans?category=Sans+Serif
+font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+$title: 'Cinzel', serif;
+$text: 'Plus Jakarta Sans', sans-serif;
+
+
+/* --START--BOX-SIZING AND REM CONFIG-- */
+html {
+    font-size: 137.5%; /* 1rem=22px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 125%; /* 1rem=20px */
+        }
+}
+
+@media (max-width: 480px) {
+    html {
+    font-size: 112.5%; /* 1rem=18px */
+    }
+}
 
 body {
-    background-color: $brown;
+    font-size: 1rem;
+}
+/* --END--BOX-SIZING AND REM CONFIG-- */
+
+
+body {
+    background: linear-gradient(0deg, rgba(26,36,50,1) 0%, rgba(22,30,41,1) 20%, rgba(17,22,28,1) 100%);
+    font-family: $text;
+    color: $white;
 }

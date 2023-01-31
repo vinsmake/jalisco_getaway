@@ -1,5 +1,39 @@
+/* this is a box-shadow valor */
+/* https://fonts.google.com/specimen/Cinzel?category=Serif
+font-family: 'Cinzel', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+/* https://fonts.google.com/specimen/Plus+Jakarta+Sans?category=Sans+Serif
+font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap");
+/* --START--BOX-SIZING AND REM CONFIG-- */
+html {
+  font-size: 137.5%; /* 1rem=22px */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 920px) {
+  html {
+    font-size: 125%; /* 1rem=20px */
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 112.5%; /* 1rem=18px */
+  }
+}
 body {
-  background-color: #A68160;
+  font-size: 1rem;
+}
+
+/* --END--BOX-SIZING AND REM CONFIG-- */
+body {
+  background: linear-gradient(0deg, rgb(26, 36, 50) 0%, rgb(22, 30, 41) 20%, rgb(17, 22, 28) 100%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
