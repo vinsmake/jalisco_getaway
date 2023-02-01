@@ -1,28 +1,23 @@
-$black--background: linear-gradient(to right, #232526, #414345);
-$background: linear-gradient(to right, #141e30, #00152c);
-
-//dark blue
-$background--dark: #00152c;
-$background--medium: #243b55;
-$background--light: #506581;
-
-//scrollbar colors
-$scrollbar--background: #00152c;
-$scrollbar--color: #245694;
 
 $section--shadow: 0px 4px 100px rgba(190, 185, 182, 0.1); /* this is a box-shadow valor */
+
+//scrollbar colors
+$scrollbar--background: #161D27;
+$scrollbar--color: #FEC93F;
+//nav
+$background--dark--transparent: rgba(22, 29, 39, 95%);
+//main colors
+$background: #1F2732;
 $white: #ffffff;
+$black: #000000;
+$secondary: #D1B06B;
+$background--dark: #161D27;
+$background--light: #2E3947;
 
-//interaction
-$interaction--margin: #00DBFF;
-$interaction--hover: #245694;
-$interaction--background: #24569480;
-
-$sky: #7EB6D9;
-$green: #667302;
-$orange: #ce4126;
-$red: #ca2801;
-$brown--chocolat: #AA6000;
+//interactions
+$interaction--margin: #FEC93F;
+$interaction--hover: #FEC93F;
+$interaction--background: #D1B06B;
 
 //icon colors
 $yellow: #FEC93F;
@@ -33,6 +28,12 @@ $brown--light: #B7A485;
 $brick--light: #FF883E;
 $brick--hard: #FF6638;
 
+//extra colors
+$sky: #7EB6D9;
+$green: #667302;
+$orange: #ce4126;
+$red: #ca2801;
+$brown--chocolat: #AA6000;
 
 
 
@@ -74,6 +75,9 @@ html {
 
 body {
     font-size: 1rem;
+    background-color: $background;
+    color: $white;
+    font-family: $text;
 }
 /* --END--BOX-SIZING AND REM CONFIG-- */
 html {
@@ -93,18 +97,28 @@ html {
     }
 }
 
-body {
-    background: $background;
-    background-repeat: no-repeat;
-    font-family: $text;
-    color: $white;
+
+main {
+    height: 100rem;
 }
 
 a {
     text-decoration: none;
 }
 
-main {
-    height: 100rem;
 
+//button
+button {
+    padding: 0.5rem;
+    background: $interaction--background;
+    border: 2px solid $interaction--margin;
+    margin: 0.5rem;
+    border-radius: 8px;
+    color: $black;
+    font-family: $title;
+
+    &:hover {
+                background-color: $interaction--hover;
+                cursor: pointer;
+    }
 }
