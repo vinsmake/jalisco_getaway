@@ -1,9 +1,11 @@
 .header {
+    //sticks the nav bar on top, makes the background transparent and blur
     position: sticky;
     top: 0px;
-    background: $interaction--background;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 5px 5px #11161C; //background shadow
+    background-color: $background--dark--transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 4px 5px 5px #11161C; //shadow to make it easy to see
+
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -12,23 +14,23 @@
     height: 3rem;
     margin: 0;
 
-    a {
-        color: $white;
-    }
-
-    .header__logo--a {
-        height: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+    font-family: $title;
     
-        .header__logo--src {
-        height: 100%;
-        margin-right: 10px;
+//start navegation logo
+    .header__logo {
+            a {
+                color: $white;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 100%;
+                    margin-right: 10px;
+                }
+            }
         }
-    }
-
+//start navegation links
     .header__nav {
         display: flex;
         justify-content: center;
@@ -37,28 +39,18 @@
 
         a{
             padding: 0.5rem;
-            border: 2px solid transparent;
+            border: 4px solid transparent;
+            color: white;
 
             &:hover {
                 background-color: $interaction--hover;
-                border: 2px solid $interaction--margin;
+                border: 4px solid $background--light;
                 border-radius: 24px;
+                color: $black;
             }
         }
     }
 }
 
-button {
-    padding: 0.5rem;
-    background: $interaction--background;
-    border: 2px solid $interaction--margin;
-    margin: 0.5rem;
-    border-radius: 90px;
-    color: white;
 
-    &:hover {
-                background-color: $interaction--hover;
-                cursor: pointer;
-    }
-}
 

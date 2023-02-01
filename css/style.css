@@ -27,6 +27,9 @@ html {
 }
 body {
   font-size: 1rem;
+  background-color: #1F2732;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* --END--BOX-SIZING AND REM CONFIG-- */
@@ -38,34 +41,41 @@ html::-webkit-scrollbar {
   width: 1rem;
 }
 html::-webkit-scrollbar-track {
-  background: #00152c;
+  background: #161D27;
 }
 html::-webkit-scrollbar-thumb {
-  background: #245694;
+  background: #FEC93F;
   border-radius: 8px;
-  border: 3px solid #00152c;
-}
-
-body {
-  background: linear-gradient(to right, #141e30, #00152c);
-  background-repeat: no-repeat;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: #ffffff;
-}
-
-a {
-  text-decoration: none;
+  border: 3px solid #161D27;
 }
 
 main {
   height: 100rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.5rem;
+  background: #D1B06B;
+  border: 2px solid #FEC93F;
+  margin: 0.5rem;
+  border-radius: 8px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+}
+button:hover {
+  background-color: #FEC93F;
+  cursor: pointer;
+}
+
 .header {
   position: sticky;
   top: 0px;
-  background: rgba(36, 86, 148, 0.5019607843);
-  backdrop-filter: blur(5px);
+  background-color: rgba(22, 29, 39, 0.95);
+  backdrop-filter: blur(2px);
   box-shadow: 0px 4px 5px 5px #11161C;
   width: 100%;
   display: flex;
@@ -74,17 +84,16 @@ main {
   padding: 1rem 0;
   height: 3rem;
   margin: 0;
+  font-family: "Cinzel", serif;
 }
-.header a {
+.header .header__logo a {
   color: #ffffff;
-}
-.header .header__logo--a {
   height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .header__logo--a .header__logo--src {
+.header .header__logo a img {
   height: 100%;
   margin-right: 10px;
 }
@@ -95,25 +104,14 @@ main {
 }
 .header .header__nav a {
   padding: 0.5rem;
-  border: 2px solid transparent;
-}
-.header .header__nav a:hover {
-  background-color: #245694;
-  border: 2px solid #00DBFF;
-  border-radius: 24px;
-}
-
-button {
-  padding: 0.5rem;
-  background: rgba(36, 86, 148, 0.5019607843);
-  border: 2px solid #00DBFF;
-  margin: 0.5rem;
-  border-radius: 90px;
+  border: 4px solid transparent;
   color: white;
 }
-button:hover {
-  background-color: #245694;
-  cursor: pointer;
+.header .header__nav a:hover {
+  background-color: #FEC93F;
+  border: 4px solid #2E3947;
+  border-radius: 24px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
