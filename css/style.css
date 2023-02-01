@@ -49,12 +49,12 @@ html::-webkit-scrollbar-thumb {
   border: 3px solid #161D27;
 }
 
-main {
-  height: 100rem;
-}
-
 a {
   text-decoration: none;
+}
+
+main {
+  height: 100rem;
 }
 
 button {
@@ -65,10 +65,34 @@ button {
   border-radius: 8px;
   color: #000000;
   font-family: "Cinzel", serif;
+  transition: all 1s;
 }
 button:hover {
   background-color: #FEC93F;
   cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  height: 20rem;
+  margin: 1rem 0rem;
+  background: url(../../../src/img/background.jpg) no-repeat 50% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero .hero__content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero .hero__content .hero__content--title {
+  font-size: 6rem;
+  color: #FEC93F;
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000, 0px 0px 5px #000000;
 }
 
 .header {
@@ -92,6 +116,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bolder;
 }
 .header .header__logo a img {
   height: 100%;
@@ -105,7 +130,9 @@ button:hover {
 .header .header__nav a {
   padding: 0.5rem;
   border: 4px solid transparent;
+  border-radius: 18px;
   color: white;
+  transition: all 1s;
 }
 .header .header__nav a:hover {
   background-color: #FEC93F;
