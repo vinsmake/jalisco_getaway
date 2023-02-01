@@ -11,6 +11,7 @@ $background: #1F2732;
 $white: #ffffff;
 $black: #000000;
 $secondary: #D1B06B;
+$yellow: #FEC93F;
 $background--dark: #161D27;
 $background--light: #2E3947;
 
@@ -20,7 +21,7 @@ $interaction--hover: #FEC93F;
 $interaction--background: #D1B06B;
 
 //icon colors
-$yellow: #FEC93F;
+
 $yellow--strong: #FEA212;
 $brown: #9B8060;
 $brown--strong: #826249;
@@ -97,15 +98,13 @@ html {
     }
 }
 
-
-main {
-    height: 100rem;
-}
-
 a {
     text-decoration: none;
 }
 
+main {
+    height: 100rem;
+}
 
 //button
 button {
@@ -116,6 +115,7 @@ button {
     border-radius: 8px;
     color: $black;
     font-family: $title;
+    transition: all 1s;
 
     &:hover {
                 background-color: $interaction--hover;
