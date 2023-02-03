@@ -48,9 +48,13 @@ font-family: 'Cinzel', serif; */
 font-family: 'Plus Jakarta Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
+/* https://fonts.google.com/specimen/Playfair+Display?preview.text=Guadalajara&preview.text_type=custom&category=Serif
+font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+
 $title: 'Cinzel', serif;
 $text: 'Plus Jakarta Sans', sans-serif;
-
+$serif: 'Cormorant SC', serif;
 
 /* --START--BOX-SIZING AND REM CONFIG-- */
 html {
