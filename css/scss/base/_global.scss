@@ -1,5 +1,5 @@
 
-$section--shadow: 0px 4px 100px rgba(190, 185, 182, 0.1); /* this is a box-shadow valor */
+$section--shadow: 0px 4px 10px #2E3947; /* this is a box-shadow valor */
 
 //scrollbar colors
 $scrollbar--background: #161D27;
@@ -121,8 +121,9 @@ button {
     font-family: $title;
     transition: all 1s;
 
-    &:hover {
-                background-color: $interaction--hover;
+    &:hover, &:focus {
                 cursor: pointer;
+                background-color: $interaction--hover;
+                border: 2px solid $background--light;
     }
 }

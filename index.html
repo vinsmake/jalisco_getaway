@@ -26,10 +26,10 @@
             <a href="#">Must-visit</a>
             <a href="#">Our services</a>
             <a href="#">Galery</a>
-            <a href="#">Contact</a>
+            <a href="#form">Contact</a>
         </nav>
         <!-- END NAV-LINKS -->
-        <button class="header--getinfo" href="#">Reserve now</button>
+        <button href="#reserve">Reserve now</button>
         <!-- END HEADER -->
     </header>
     <!-- START HERO -->
@@ -41,6 +41,41 @@
         </div>
     </section>
     <main>
+        <section class="reserve" id="reserve">
+            <form>
+                <div class="input">
+                    <label for="place">Where would you like to go?</label>
+                    <select id="place">
+                        <option value="" disabled selected>Select a place</option>
+                        <option value="">Guadalajara (Downtown, Musa Museum of arts, Hospice Cababás, Degollado's theater)</option>
+                        <option value="">Tequila (Downtown, Jose Cuervo's distiller, Sauza's House)</option>
+                        <option value="">Tlaquepaque (El Parean, Independencia Avenue, Ceramic Museum)</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="date">When would you like to go?</label>
+                    <select id="date">
+                        <option value="" disabled selected>Select a date</option>
+                        <option value="">February</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="people">How many people?</label>
+                    <input type="number" id="people" min="1" max="20">
+                </div>
+                <div class="input">
+                    <button>Reserve now</button>
+                </div>
+
+            </form>
+
+
+
+
+        </section>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates nobis, optio debitis deserunt, saepe aperiam mollitia ducimus unde, accusamus ullam nisi voluptatibus error quidem molestiae praesentium tenetur dolorum rerum?
     </main>
     <!-- END HERO -->
