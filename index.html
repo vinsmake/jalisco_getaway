@@ -22,11 +22,11 @@
         <!-- END LOGO -->
         <!-- START NAV-LINKS -->
         <nav class="header__nav">
-            <a href="#">About</a>
+            <a href="#about">About</a>
             <a href="#">Must-visit</a>
             <a href="#">Our services</a>
             <a href="#">Galery</a>
-            <a href="#form">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
         <!-- END NAV-LINKS -->
         <button href="#reserve">Reserve now</button>
@@ -46,21 +46,22 @@
                 <div class="input">
                     <label for="place">Where would you like to go?</label>
                     <select id="place">
-                        <option value="" disabled selected>Select a place</option>
-                        <option value="">Guadalajara (Downtown, Musa Museum of arts, Hospice Cababás, Degollado's theater)</option>
-                        <option value="">Tequila (Downtown, Jose Cuervo's distiller, Sauza's House)</option>
-                        <option value="">Tlaquepaque (El Parean, Independencia Avenue, Ceramic Museum)</option>
+                        <option disabled selected>Select a place</option>
+                        <option>Guadalajara (Downtown, Musa Museum of arts, Hospice Cababás, Degollado's theater)</option>
+                        <option>Tequila (Downtown, Jose Cuervo's distiller, Sauza's House)</option>
+                        <option>Tlaquepaque (El Parean, Independencia Avenue, Ceramic Museum)</option>
                     </select>
                 </div>
                 <div class="input">
                     <label for="date">When would you like to go?</label>
-                    <select id="date">
-                        <option value="" disabled selected>Select a date</option>
-                        <option value="">February</option>
-                        <option value="">March</option>
-                        <option value="">April</option>
-                        <option value="">May</option>
-                    </select>
+                    <input type="date" min="2023-01-01" max="2023-12-31">
+<!--                     <select id="date"> //a option version of select.
+                        <option disabled selected>Select a date</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                    </select> -->
                 </div>
                 <div class="input">
                     <label for="people">How many people?</label>
@@ -69,12 +70,20 @@
                 <div class="input">
                     <button>Reserve now</button>
                 </div>
-
             </form>
-
-
-
-
+        </section>
+        <section class="about" id="about">
+            <div class="video">
+                <iframe muted="muted" src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- autoplay=0 mean not autoplay, &mute=1 means muted, both are booleans with 0 or 1 valor. start=4 means that starts in the second 4  -->
+                <div class="controls">
+                    <span data-src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4"></span>
+                    <span data-src="https://www.youtube.com/embed/Vyd-xYVyq00?autoplay=1&mute=1"></span>
+                    <span data-src="https://www.youtube.com/embed/QGAcfpmY5j0?autoplay=1&mute=1"></span>
+                </div>
+            </div>
+            <div class="info">
+                Hola
+            </div>
         </section>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates nobis, optio debitis deserunt, saepe aperiam mollitia ducimus unde, accusamus ullam nisi voluptatibus error quidem molestiae praesentium tenetur dolorum rerum?
     </main>
