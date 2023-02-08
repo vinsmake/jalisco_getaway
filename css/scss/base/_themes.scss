@@ -1,0 +1,62 @@
+
+//scrollbar colors
+$scrollbar--background: #161D27;
+$scrollbar--color: #FEC93F;
+
+
+//nav
+$background--dark--transparent: rgba(22, 29, 39, 95%);
+//main colors
+$background: #161D27;
+$white: #ffffff;
+$black: #000000;
+$secondary: #D1B06B; //spans
+$yellow: #FEC93F; //titles
+$background--dark: #1F2732;
+$background--light: #2E3947;
+
+//interactions
+$interaction--margin: #FEC93F;
+$interaction--hover: #FEC93F;
+$interaction--background: #D1B06B;
+
+//icon colors
+
+$yellow--strong: #FEA212;
+$brown: #9B8060;
+$brown--strong: #826249;
+$brown--light: #B7A485;
+$brick--light: #FF883E;
+$brick--hard: #FF6638;
+
+//extra colors
+$sky: #7EB6D9;
+$green: #667302;
+$orange: #ce4126;
+$red: #ca2801;
+$brown--chocolat: #AA6000;
+
+
+
+
+
+/* https://fonts.google.com/specimen/Cinzel?category=Serif
+font-family: 'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+/* https://fonts.google.com/specimen/Plus+Jakarta+Sans?category=Sans+Serif
+font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+/* https://fonts.google.com/specimen/Playfair+Display?preview.text=Guadalajara&preview.text_type=custom&category=Serif
+font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+
+$title: 'Cinzel', serif;
+$text: 'Plus Jakarta Sans', sans-serif;
+$serif: 'Cormorant SC', serif;
+
+$section--shadow: 0px 4px 10px #2E3947; /* this is a box-shadow valor */
+$hero--shadow: 0px 0px 5px $black,
+0px 0px 5px $black,
+0px 0px 5px $black;

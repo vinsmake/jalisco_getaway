@@ -1,5 +1,12 @@
-//imports global styles
+//imports base styles
+@import "base/themes"; //need to be the first
+@import "base/mixins"; //nneds to be the second
+@import "base/scroll";
 @import "base/global";
+
+
+
+
 //imports layout styles
 @import "layout/hero";
 @import "layout/footer";
@@ -8,3 +15,4 @@
 @import "layout/navegation";
 @import "layout/reserve";
 @import "layout/about";
+

@@ -1,0 +1,6 @@
+Guadalajara: río que corre entre piedras
+Tlaquepaque: Lugar sobre lomas de tierra barrial
+Tequila: Lugar de tributos
+
+
+el <p> de la description es la dara por google justo debajo del mapa y encima de los datos geograficos.

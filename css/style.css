@@ -1,4 +1,3 @@
-/* this is a box-shadow valor */
 /* https://fonts.google.com/specimen/Cinzel?category=Serif
 font-family: 'Cinzel', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
@@ -8,6 +7,23 @@ font-family: 'Plus Jakarta Sans', sans-serif; */
 /* https://fonts.google.com/specimen/Playfair+Display?preview.text=Guadalajara&preview.text_type=custom&category=Serif
 font-family: 'Playfair Display', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
+/* this is a box-shadow valor */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #161D27;
+}
+html::-webkit-scrollbar-thumb {
+  background: #FEC93F;
+  border-radius: 8px;
+  border: 3px solid #161D27;
+}
+
 /* --START--BOX-SIZING AND REM CONFIG-- */
 html {
   font-size: 137.5%; /* 1rem=22px */
@@ -30,50 +46,31 @@ html {
 }
 body {
   font-size: 1rem;
-  background-color: #1F2732;
+  background-color: #161D27;
   color: #ffffff;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 200;
+  height: 200rem;
 }
 
 /* --END--BOX-SIZING AND REM CONFIG-- */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
-}
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-html::-webkit-scrollbar-track {
-  background: #161D27;
-}
-html::-webkit-scrollbar-thumb {
-  background: #FEC93F;
-  border-radius: 8px;
-  border: 3px solid #161D27;
-}
-
 a {
   text-decoration: none;
 }
 
-main {
-  height: 100rem;
-}
-
 button {
-  padding: 0.5rem;
-  background: #D1B06B;
+  background-color: #D1B06B;
   border: 2px solid #FEC93F;
-  margin: 0.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   color: #000000;
   font-family: "Cinzel", serif;
   transition: all 1s;
+  margin: auto;
 }
 button:hover, button:focus {
-  cursor: pointer;
   background-color: #FEC93F;
-  border: 2px solid #2E3947;
+  cursor: pointer;
 }
 
 .hero {
@@ -103,7 +100,6 @@ button:hover, button:focus {
   font-weight: 200;
 }
 .hero .hero__content :nth-child(2) {
-  color: transparent;
   font-size: 2.5rem;
   margin: 0 0 1rem 0;
   text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000, 0px 0px 5px #000000;
@@ -117,6 +113,7 @@ button:hover, button:focus {
   font-size: 1.2rem;
   max-width: 40rem;
   margin: 0rem auto;
+  font-weight: 400;
 }
 
 .header {
@@ -164,20 +161,24 @@ button:hover, button:focus {
   border-radius: 24px;
   color: #000000;
 }
+.header button {
+  margin: 0.5rem;
+}
 
 .reserve {
-  width: 80%;
+  background-color: #2E3947;
+  box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
+  width: 90%;
   margin: -4rem auto 1rem auto;
   padding: 2rem;
-  background-color: #2E3947;
-  border-radius: 8px;
   position: static;
-  border: 2px solid #161D27;
-  box-shadow: 0px 4px 10px #2E3947;
+  border: 2px solid #1F2732;
 }
 .reserve form {
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr 2fr;
+  grid-template-columns: 3fr 3fr 2fr 2fr;
   gap: 1rem;
 }
 .reserve form .input {
@@ -187,14 +188,15 @@ button:hover, button:focus {
   font-size: 1rem;
 }
 .reserve form .input select, .reserve form .input input {
-  width: 100%;
   background-color: #D1B06B;
   border: 2px solid #FEC93F;
+  width: 100%;
   height: 2rem;
   border-radius: 8px;
 }
-.reserve form .input select:focus, .reserve form .input select:hover, .reserve form .input input:focus, .reserve form .input input:hover {
+.reserve form .input select:hover, .reserve form .input select:focus, .reserve form .input input:hover, .reserve form .input input:focus {
   background-color: #FEC93F;
+  cursor: pointer;
 }
 
 .about {
@@ -205,13 +207,17 @@ button:hover, button:focus {
   gap: 2rem;
 }
 .about .video {
+  background-color: #2E3947;
   box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
   width: 100%;
   height: 20rem;
 }
 .about .video iframe {
   width: 100%;
   height: 100%;
+  margin: auto;
   border-radius: 8px;
 }
 .about .video .controls {
@@ -220,15 +226,52 @@ button:hover, button:focus {
   justify-content: center;
 }
 .about .video .controls span {
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
   background-color: #2E3947;
   display: inline-block;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  border: 2px solid #FEC93F;
   margin: 1rem;
 }
 .about .video .controls span:hover, .about .video .controls span:focus {
+  background-color: #FEC93F;
+  cursor: pointer;
+}
+.about .info {
+  background-color: #2E3947;
+  box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
+  padding: 1rem;
+}
+.about .info span {
+  color: #D1B06B;
+  margin-left: 1rem;
+}
+.about .info h3 {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 0;
+}
+.about .info p {
+  margin: 0 0 2rem 0;
+}
+.about .info a {
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  transition: all 1s;
+  margin: auto;
+}
+.about .info a:hover, .about .info a:focus {
   background-color: #FEC93F;
   cursor: pointer;
 }
