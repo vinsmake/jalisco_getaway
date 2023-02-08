@@ -1,0 +1,16 @@
+//start mixins
+@mixin interaction() {
+    background-color: $interaction--background;
+    border: 2px solid $interaction--margin;
+    &:hover, &:focus {
+        background-color: $interaction--hover;
+        cursor: pointer;
+    }
+}
+
+@mixin section() {
+    background-color: $background--light;
+    box-shadow: $section--shadow;
+    border-radius: 8px;
+    margin: auto;
+}
