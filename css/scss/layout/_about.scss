@@ -36,6 +36,23 @@
 
     .info {
         @include section;
-        
+        padding: 1rem;
+
+        span {
+            color: $secondary;
+            margin-left: 1rem;
+        }
+        h3 {
+            @include title;
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            margin: 0 0 2rem 0;
+        }
+        a {
+            @include interaction;
+            @include button;
+        }
     }
 }

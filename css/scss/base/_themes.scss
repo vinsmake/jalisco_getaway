@@ -1,4 +1,3 @@
-$section--shadow: 0px 4px 10px #2E3947; /* this is a box-shadow valor */
 
 //scrollbar colors
 $scrollbar--background: #161D27;
@@ -11,8 +10,8 @@ $background--dark--transparent: rgba(22, 29, 39, 95%);
 $background: #161D27;
 $white: #ffffff;
 $black: #000000;
-$secondary: #D1B06B;
-$yellow: #FEC93F;
+$secondary: #D1B06B; //spans
+$yellow: #FEC93F; //titles
 $background--dark: #1F2732;
 $background--light: #2E3947;
 
@@ -57,4 +56,7 @@ $title: 'Cinzel', serif;
 $text: 'Plus Jakarta Sans', sans-serif;
 $serif: 'Cormorant SC', serif;
 
-
+$section--shadow: 0px 4px 10px #2E3947; /* this is a box-shadow valor */
+$hero--shadow: 0px 0px 5px $black,
+0px 0px 5px $black,
+0px 0px 5px $black;

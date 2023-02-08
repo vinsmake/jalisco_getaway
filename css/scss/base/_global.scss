@@ -27,6 +27,8 @@ body {
     background-color: $background;
     color: $white;
     font-family: $text;
+    font-weight: 200;
+    height: 200rem;
 }
 /* --END--BOX-SIZING AND REM CONFIG-- */
 
@@ -39,11 +41,6 @@ a {
 //button
 button {
     @include interaction;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 8px;
-    color: $black;
-    font-family: $title;
-    transition: all 1s;
+    @include button;
 
 }

@@ -14,3 +14,20 @@
     border-radius: 8px;
     margin: auto;
 }
+
+@mixin button() {
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: $black;
+    font-family: $title;
+    transition: all 1s;
+    margin: auto;
+}
+
+@mixin title() {
+    text-shadow: 0px 0px 5px $black,
+    0px 0px 5px $black;
+    color: $yellow;
+    font-family: $title;
+    font-weight: 200;
+}
