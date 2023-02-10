@@ -261,6 +261,7 @@ button:hover, button:focus {
 }
 .about .info p {
   margin: 0 0 2rem 0;
+  text-align: justify;
 }
 .about .info a {
   background-color: #D1B06B;
@@ -321,6 +322,7 @@ button:hover, button:focus {
 }
 .visit article .legend p {
   font-size: 1rem;
+  text-align: justify;
 }
 .visit article .legend div {
   display: flex;
