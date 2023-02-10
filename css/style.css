@@ -62,15 +62,65 @@ button {
   background-color: #D1B06B;
   border: 2px solid #FEC93F;
   padding: 0.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #000000;
   font-family: "Cinzel", serif;
-  transition: all 1s;
   margin: auto;
+  transition: background-color 0.5s;
 }
 button:hover, button:focus {
   background-color: #FEC93F;
   cursor: pointer;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(22, 29, 39, 0.95);
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 4px 5px 5px #11161C;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  height: 3rem;
+  margin: 0;
+  font-family: "Cinzel", serif;
+  z-index: 999;
+}
+.header .header__logo a {
+  color: #ffffff;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.header .header__logo a img {
+  height: 100%;
+  margin-right: 10px;
+}
+.header .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav a {
+  padding: 0.5rem;
+  border: 4px solid transparent;
+  border-radius: 18px;
+  color: white;
+}
+.header .header__nav a:hover, .header .header__nav a:focus {
+  background-color: #FEC93F;
+  border: 4px solid #2E3947;
+  border-radius: 24px;
+  color: #000000;
+  transition: all 0.8s;
+}
+.header button {
+  margin: 0.5rem;
 }
 
 .hero {
@@ -116,55 +166,6 @@ button:hover, button:focus {
   font-weight: 400;
 }
 
-.header {
-  position: sticky;
-  top: 0px;
-  background-color: rgba(22, 29, 39, 0.95);
-  backdrop-filter: blur(2px);
-  box-shadow: 0px 4px 5px 5px #11161C;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0;
-  height: 3rem;
-  margin: 0;
-  font-family: "Cinzel", serif;
-}
-.header .header__logo a {
-  color: #ffffff;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;
-}
-.header .header__logo a img {
-  height: 100%;
-  margin-right: 10px;
-}
-.header .header__nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .header__nav a {
-  padding: 0.5rem;
-  border: 4px solid transparent;
-  border-radius: 18px;
-  color: white;
-  transition: all 1s;
-}
-.header .header__nav a:hover, .header .header__nav a:focus {
-  background-color: #FEC93F;
-  border: 4px solid #2E3947;
-  border-radius: 24px;
-  color: #000000;
-}
-.header button {
-  margin: 0.5rem;
-}
-
 .reserve {
   background-color: #2E3947;
   box-shadow: 0px 4px 10px #2E3947;
@@ -201,8 +202,8 @@ button:hover, button:focus {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 90%;
+  grid-template-columns: 3fr 2fr;
+  width: 80%;
   margin: 4rem auto;
   gap: 2rem;
 }
@@ -265,13 +266,84 @@ button:hover, button:focus {
   background-color: #D1B06B;
   border: 2px solid #FEC93F;
   padding: 0.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   color: #000000;
   font-family: "Cinzel", serif;
-  transition: all 1s;
   margin: auto;
+  transition: background-color 0.5s;
 }
 .about .info a:hover, .about .info a:focus {
+  background-color: #FEC93F;
+  cursor: pointer;
+}
+
+.visit {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.visit article {
+  box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #2E3947;
+  box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
+}
+.visit article:hover img, .visit article:focus img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+.visit article img {
+  height: 15rem;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.visit article .legend {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.visit article .legend h4 {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+}
+.visit article .legend p {
+  font-size: 1rem;
+}
+.visit article .legend div {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+}
+.visit article .legend div a {
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  margin: auto;
+  transition: background-color 0.5s;
+  margin: 0 1rem 1rem auto;
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.visit article .legend div a:hover, .visit article .legend div a:focus {
   background-color: #FEC93F;
   cursor: pointer;
 }
