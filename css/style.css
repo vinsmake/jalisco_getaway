@@ -73,6 +73,10 @@ button:hover, button:focus {
   cursor: pointer;
 }
 
+h3 {
+  text-align: center;
+}
+
 .header {
   position: sticky;
   top: 0px;
@@ -319,13 +323,18 @@ button:hover, button:focus {
   color: #FEC93F;
   font-family: "Cinzel", serif;
   font-weight: 200;
+  margin: 1rem 0 0 0;
+}
+.visit article .legend span {
+  color: #D1B06B;
+  margin: 0;
 }
 .visit article .legend p {
   font-size: 1rem;
   text-align: justify;
+  margin-bottom: 2rem;
 }
 .visit article .legend div {
-  display: flex;
   width: 100%;
   margin-top: 2rem;
 }
@@ -348,6 +357,105 @@ button:hover, button:focus {
 .visit article .legend div a:hover, .visit article .legend div a:focus {
   background-color: #FEC93F;
   cursor: pointer;
+}
+
+.experiences {
+  width: 100%;
+  height: 15rem;
+  margin: 1rem auto;
+  /*  cover, need to put the source of the starting from css/style.css */
+  background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 0% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.experiences .content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  width: 95%;
+  height: 100%;
+}
+.experiences .content article {
+  background-color: #2E3947;
+  box-shadow: 0px 4px 10px #2E3947;
+  border-radius: 8px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(22, 29, 39, 0.95);
+}
+.experiences .content article img {
+  height: 3rem;
+  margin: auto;
+}
+.experiences .content article h4 {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+}
+.experiences .content article:hover, .experiences .content article:focus {
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+.gallery article {
+  position: relative;
+  border-radius: 8px;
+  break-inside: avoid;
+  margin: 0 0 1rem 0;
+}
+.gallery article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.gallery article div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  border-radius: 8px;
+}
+.gallery article div p {
+  font-size: 2rem;
+}
+.gallery article div span {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+}
+.gallery article:hover div {
+  opacity: 1;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

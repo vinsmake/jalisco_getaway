@@ -1,0 +1,40 @@
+.experiences {
+    width: 100%;
+    height: 15rem;
+    margin: 1rem auto;
+/*  cover, need to put the source of the starting from css/style.css */
+    background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 0% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+.content {
+        @include grid(6);
+        width: 95%;
+        height: 100%;
+        article {
+            @include section;
+            display: flex;
+            flex-direction: column;
+            height: 12rem;
+            width: 100%;
+            padding: 1rem;
+            background-color: $background--dark--transparent;
+
+            img {
+                height: 3rem;
+                margin: auto;
+            }
+
+            h4 {
+                @include title;
+                color: $white;
+                text-align: center;
+            }
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+            }
+        }// article
+}//content
+}//experiences
+
