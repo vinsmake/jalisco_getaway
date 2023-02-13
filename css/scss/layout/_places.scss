@@ -1,12 +1,4 @@
-@mixin visit {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
 
-}
 
 @mixin place {
     box-shadow: $section--shadow;
@@ -40,16 +32,20 @@
 
         h4 {
             @include title;
+            margin: 1rem 0 0 0;
+        }
+
+        span {
+            color: $secondary;
+            margin: 0;
         }
 
         p {
             font-size: 1rem;
             text-align: justify;
-
-
+            margin-bottom: 2rem;
         }
         div {
-            display: flex;
             width: 100%;  
             margin-top: 2rem;  
             a {
@@ -68,7 +64,7 @@
 
 
 .visit {
-    @include visit;
+    @include grid(3);
     article {
         @include place;
         @include section;

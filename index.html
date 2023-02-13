@@ -27,8 +27,8 @@
         <nav class="header__nav">
             <a href="#about">About</a>
             <a href="#visit">Must-visit</a>
-            <a href="#">Our services</a>
-            <a href="#">Galery</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
         <!-- END NAV-LINKS -->
@@ -43,8 +43,9 @@
             <p class="hero__content--text">One of the most importan economic and cultural centers of Mexico, birthplace of mariachi, tequila & charreria.</p>
         </div>
     </section>
+        <!-- END HERO -->
     <main>
-        <section class="reserve" id="reserve">
+        <section class="reserve" id="reserve"> <!-- START RESERVE FORM -->
             <form>
                 <div class="input">
                     <label for="place">Where would you like to go?</label>
@@ -52,19 +53,12 @@
                         <option disabled selected>Select a place</option>
                         <option>Guadalajara (Downtown, Musa Museum of Arts, Hospice Cabañas, Degollado's theater)</option>
                         <option>Tequila (Downtown, Jose Cuervo's distiller, Sauza's House)</option>
-                        <option>Tlaquepaque (El Parean, Independencia Avenue, Ceramic Museum)</option>
+                        <option>Tlaquepaque (El Parean, Independence Avenue, Ceramic Museum)</option>
                     </select>
                 </div>
                 <div class="input">
                     <label for="date">When would you like to go?</label>
                     <input type="date" min="2023-01-01" max="2023-12-31">
-<!--                     <select id="date"> //a option version of select.
-                        <option disabled selected>Select a date</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                    </select> -->
                 </div>
                 <div class="input">
                     <label for="people">How many people?</label>
@@ -74,8 +68,8 @@
                     <button>Reserve now</button>
                 </div>
             </form>
-        </section>
-        <section class="about" id="about">
+        </section>  <!-- END RESERVE FORM -->
+        <section class="about" id="about"> <!-- START ABOUT -->
             <div class="video">
                 <iframe muted="muted" src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- autoplay=0 mean not autoplay, &mute=1 means muted, both are booleans with 0 or 1 valor. start=4 means that starts in the second 4  -->
                 <div class="controls">
@@ -92,15 +86,18 @@
                 <a href="https://guadalajara.gob.mx/gdlWeb/#/principal">Official Website</a>
 
             </div>
-        </section>
-        <section class="visit" id="visit">
+        </section>  <!-- END ABOUT -->
+        <h3 id="visit">The Must-visit places</h3><!-- START MUST VISIT -->
+        <section class="visit"> 
+
             <article>
                 <img src="src/img/guadalajara/degollado.jpg">
                 <div class="legend">
                     <h4>Degollado's theater</h4>
+                    <span>Guadalajara</span>
                     <p>The architectural style is neoclassic, and the recently restored building is now one of the best-preserved theaters in Latin America.
                         Its magnificent portico features a high relief Travertine marble frieze based on the theme "Apollo and the Muses" by sculptor Benito Castaneda; it bears the engraved inscription "May the clamor of discord never arrive"
-                        In the Teatro Degollado’s main auditorium, very similar in design to the Teatro Della Scala in Milan, a mural by Jalisco’s painters Jacobo Galvez, Gerardo Suarez and Carlos Villaseñor graces the ceiling, representing the fourth Circle of Dante’s Divine Comedy.</p>
+                    </p>
                         <div class="diva">
                                         <a href="http://en.ofj.com.mx/teatro-degollado/">Ver mas</a>
             </div>
@@ -109,7 +106,8 @@
                 <img src="src/img/guadalajara/cabañas.png">
                 <div class="legend">
                     <h4>Hospice Cabañas</h4>
-                    <p>The Hospicio Cabañas or Museum Cabañas in Guadalajara, Jalisco was one of the oldest and largest orphanage and hospital complexes in the Americas. Now turned into a museum, the main hall hosts the magnum opus frescoes of muralist painter José Clemente Orozco. The highlight of the interior decoration is a series of monumental frescoes by José Clemente Orozco, including one of his most famed creations, the allegory of The Man of Fire. The place was designated a UNESCO World Heritage Site in 1997.</p>
+                    <span>Guadalajara</span>
+                    <p>The Hospicio Cabañas or Museum Cabañas in Guadalajara, Jalisco was one of the oldest and largest orphanage and hospital complexes in the Americas. Now turned into a museum, the highlight of the interior decoration is a series of monumental frescoes by José Clemente Orozco, including one of his most famed creations, the allegory of The Man of Fire.</p>
                     <div class="diva">
                                     <a href="https://en.wikipedia.org/wiki/Hospicio_Caba%C3%B1as">Ver mas</a>
                                 </div>
@@ -119,7 +117,8 @@
                 <img src="src/img/guadalajara/musa.jpg">
                 <div class="legend">
                     <h4>Musa Museum of arts</h4>
-                    <p>Behind the white facade of an imposing neoclassical building in downtown Guadalajara, the University of Guadalajara Art Museum (MUSA) has a impressive collection of artworks and murals by notable Mexican artists which began to gather form the artistic flourishing that Guadalajara experienced during the 1980s. The selection criterion was very specific: the works had to be of artists originating in Jalisco that had a production backed by its quality and originality. Currently, the MUSA collection consists of more than 100 pieces of the most significant Jalisco.</p>
+                    <span>Guadalajara</span>
+                    <p>Behind the white facade of an imposing neoclassical building in downtown Guadalajara, the University of Guadalajara Art Museum (MUSA) has a impressive collection of artworks and murals by notable Mexican artists which began to gather form the artistic flourishing that Guadalajara experienced during the 1980s. Currently, the MUSA collection consists of more than 100 pieces of the most significant Jalisco.</p>
                     <div class="diva">
                                     <a href="https://es.wikipedia.org/wiki/Museo_de_las_Artes_Universidad_de_Guadalajara">Ver mas</a>
                                 </div>
@@ -127,9 +126,134 @@
             </article>
 
 
+        </section> <!-- END MUST VISIT -->
+
+        <h3 id="experiences">Best Experiences</h3>
+        <section class="experiences">
+            <div class="content">
+                <article>
+                    <img src="src/svg/experiences/food.svg">
+                    <h4>Discover the best restaurants and bars</h4>
+                </article>
+                <article>
+                    <img src="src/svg/experiences/bus.svg">
+                    <h4>Need transport? here's a guide</h4>
+                </article>
+                <article>
+                    <img src="src/svg/experiences/hotel.svg">
+                    <h4>The best hotels in the city</h4>
+                </article>
+                <article>
+                    <img src="src/svg/experiences/museum.svg">
+                    <h4>Visit the best museums in the city</h4>
+                </article>
+                <article>
+                    <img src="src/svg/experiences/tree.svg">
+                    <h4>The most beautiful parks are here</h4>
+                </article>
+                <article>
+                    <img src="src/svg/experiences/bike.svg">
+                    <h4>Memorable tours around the city</h4>
+                </article>
+            </div>
+        </section>
+        <h3 id="gallery">Gallery</h3>
+        <section class="gallery">
+            <div class="guadalajara">
+                <article>
+                    <img src="src/img/galery/guadalajara-centro.webp">
+                    <div>
+                        <p>Cathedral</p>
+                        <span>Guadalajara</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/mariachi.jpg">
+                    <div>
+                        <p>Calaverandia</p>
+                        <span>Guadalajara</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/musa.jpg">
+                    <div>
+                        <p>Musa Museum of arts</p>
+                        <span>Guadalajara</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/degollado.jpg">
+                    <div>
+                        <p>Degollado's theater</p>
+                        <span>Guadalajara</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/navidalia.jpg">
+                    <div>
+                        <p>Navidalia</p>
+                        <span>Guadalajara</span>
+                    </div>
+                </article>
+            </div>
+        
+            <div class="tequila">
+                <article>
+                    <img src="src/img/galery/tequilacentro.jpg">
+                    <div>
+                        <p>Downtown</p>
+                        <span>Tequila</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/tequilaigle.jpg">
+                    <div>
+                        <p>Downtown</p>
+                        <span>Tequila</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/josecuervo.jpg">
+                    <div>
+                        <p>Jose Cuervo's distiller</p>
+                        <span>Tequila</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/casasauza.jpg">
+                    <div>
+                        <p>Sauza's House</p>
+                        <span>Tequila</span>
+                    </div>
+                </article>
+            </div>
+            <div class="tlaquepaque">
+                <article>
+                    <img src="src/img/galery/parean.jpg">
+                    <div>
+                        <p>Parean</p>
+                        <span>Tlaquepaque</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/ceramica.jpg">
+                    <div>
+                        <p>Ceramic Museum</p>
+                        <span>Tlaquepaque</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="src/img/galery/independencia.jpg">
+                    <div>
+                        <p>Independence Avenue</p>
+                        <span>Tlaquepaque</span>
+                    </div>
+                </article>
+            </div>
+        
         </section>
     </main>
-    <!-- END HERO -->
+
     <script src="js/global.js"></script>
 </body>
 </html>

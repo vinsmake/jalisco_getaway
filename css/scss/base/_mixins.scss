@@ -36,6 +36,15 @@
     margin: auto;
 }
 
+@mixin grid ($repeat) {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat($repeat, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
 
 
 
