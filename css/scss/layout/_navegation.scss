@@ -53,9 +53,13 @@
             }
         }
     }
-    button{
+    .header__button {
+    a{
+        @include interaction;
+        @include button;
         margin: 0.5rem;
     }
+}
 }
 
 
