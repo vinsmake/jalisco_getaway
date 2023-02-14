@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* https://fonts.google.com/specimen/Cinzel?category=Serif
 font-family: 'Cinzel', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
@@ -123,8 +124,20 @@ h3 {
   color: #000000;
   transition: all 0.8s;
 }
-.header button {
+.header .header__button a {
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  margin: auto;
+  transition: background-color 0.5s;
   margin: 0.5rem;
+}
+.header .header__button a:hover, .header .header__button a:focus {
+  background-color: #FEC93F;
+  cursor: pointer;
 }
 
 .hero {
@@ -510,6 +523,129 @@ h3 {
   color: #FEC93F;
   font-family: "Cinzel", serif;
   font-weight: 200;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 1rem auto 0 auto;
+  /*  cover, need to put the source of the starting from css/style.css */
+  background: url(../src/img/cabañas.jpg) no-repeat 0% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner span {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.banner h3 {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+.banner p {
+  font-size: 2rem;
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000, 0px 0px 5px #000000;
+  font-weight: 400;
+  margin: 0;
+}
+.banner a {
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  margin: auto;
+  transition: background-color 0.5s;
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
+  margin: 2rem 0;
+}
+.banner a:hover, .banner a:focus {
+  background-color: #FEC93F;
+  cursor: pointer;
+}
+
+.footer .content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  height: auto;
+  width: 90%;
+  margin: 1rem auto 0 auto;
+}
+.footer .content article {
+  display: flex;
+  flex-direction: column;
+}
+.footer .content article div {
+  margin: 0.2rem;
+}
+.footer .content article div a {
+  width: auto;
+  display: inline-flex;
+}
+.footer .content article div a img {
+  width: 1rem;
+  height: 1rem;
+}
+.footer .content article div a p {
+  color: #ffffff;
+  font-weight: 400;
+  margin: auto 0.5rem;
+}
+.footer .content article div a p:hover {
+  color: #FEC93F;
+}
+.footer .content .suscribe form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+}
+.footer .content .suscribe form label {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+}
+.footer .content .suscribe form input {
+  background-color: #D1B06B;
+  border: 2px solid #FEC93F;
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  margin: auto;
+  transition: background-color 0.5s;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+}
+.footer .content .suscribe form input:hover, .footer .content .suscribe form input:focus {
+  background-color: #FEC93F;
+  cursor: pointer;
+}
+.footer .copy p {
+  text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+  color: #FEC93F;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
