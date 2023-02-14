@@ -1,0 +1,51 @@
+.reviews {
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    margin: auto;
+
+    .text {
+        margin: auto;
+        flex: 1;
+        padding: 0.5rem;
+
+        span, h3, p {
+            @include title;
+            text-shadow: 0px 0px 5px $yellow;
+        }
+
+        h3 {
+            color: $white;
+            font-size: 2rem;
+        }
+    }
+
+    .clients {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        article {
+            @include section;
+            margin: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            margin: 1rem;
+            height: auto;
+
+            img {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            .comment {
+            span {
+                @include title;
+            }
+        }
+        }
+    }
+}
