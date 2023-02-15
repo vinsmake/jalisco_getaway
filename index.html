@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- better fonts -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"> <!-- normalize -->
     <link href="css/style.css" rel="stylesheet"> <!-- SCSS result archieve -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
 
     <title>Document</title>
 </head>
@@ -93,7 +94,7 @@
         <h3 id="visit">The Must-visit places</h3><!-- START MUST VISIT -->
         <section class="visit"> 
 
-            <article>
+            <article data-aos="zoom-in-up">
                 <img src="src/img/guadalajara/degollado.jpg">
                 <div class="legend">
                     <h4>Degollado's theater</h4>
@@ -105,7 +106,7 @@
                                         <a href="http://en.ofj.com.mx/teatro-degollado/">Ver mas</a>
             </div>
             </article>
-            <article>
+            <article data-aos="zoom-in-up">
                 <img src="src/img/guadalajara/cabañas.png">
                 <div class="legend">
                     <h4>Hospice Cabañas</h4>
@@ -116,7 +117,7 @@
                                 </div>
             </div>
             </article>
-            <article>
+            <article data-aos="zoom-in-up">
                 <img src="src/img/guadalajara/musa.jpg">
                 <div class="legend">
                     <h4>Musa Museum of arts</h4>
@@ -134,27 +135,27 @@
         <h3 id="experiences">Best Experiences</h3>
         <section class="experiences">
             <div class="content">
-                <article>
+                <article data-aos="fade-left">
                     <img src="src/svg/experiences/food.svg">
                     <h4>Discover the best restaurants and bars</h4>
                 </article>
-                <article>
+                <article data-aos="fade-left">
                     <img src="src/svg/experiences/bus.svg">
                     <h4>Need transport? here's a guide</h4>
                 </article>
-                <article>
+                <article data-aos="fade-left">
                     <img src="src/svg/experiences/hotel.svg">
                     <h4>The best hotels in the city</h4>
                 </article>
-                <article>
+                <article data-aos="fade-right">
                     <img src="src/svg/experiences/museum.svg">
                     <h4>Visit the best museums in the city</h4>
                 </article>
-                <article>
+                <article data-aos="fade-right">
                     <img src="src/svg/experiences/tree.svg">
                     <h4>The most beautiful parks are here</h4>
                 </article>
-                <article>
+                <article data-aos="fade-right">
                     <img src="src/svg/experiences/bike.svg">
                     <h4>Memorable tours around the city</h4>
                 </article>
@@ -163,35 +164,35 @@
         <h3 id="gallery">Gallery</h3> <!-- START GALLERY -->
         <section class="gallery">
             <div class="guadalajara">
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/guadalajara-centro.webp">
                     <div>
                         <p>Cathedral</p>
                         <span>Guadalajara</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/mariachi.jpg">
                     <div>
                         <p>Calaverandia</p>
                         <span>Guadalajara</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/musa.jpg">
                     <div>
                         <p>Museum of arts</p>
                         <span>Guadalajara</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/degollado.jpg">
                     <div>
                         <p>Degollado's theater</p>
                         <span>Guadalajara</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/navidalia.jpg">
                     <div>
                         <p>Navidalia</p>
@@ -201,28 +202,28 @@
             </div>
         
             <div class="tequila">
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/tequilacentro.jpg">
                     <div>
                         <p>Downtown</p>
                         <span>Tequila</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/tequilaigle.jpg">
                     <div>
                         <p>Downtown</p>
                         <span>Tequila</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/josecuervo.jpg">
                     <div>
                         <p>Jose Cuervo's distiller</p>
                         <span>Tequila</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/casasauza.jpg">
                     <div>
                         <p>Sauza's House</p>
@@ -231,21 +232,21 @@
                 </article>
             </div>
             <div class="tlaquepaque">
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/parean.jpg">
                     <div>
                         <p>Parean</p>
                         <span>Tlaquepaque</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/ceramica.jpg">
                     <div>
                         <p>Ceramic Museum</p>
                         <span>Tlaquepaque</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/img/galery/independencia.jpg">
                     <div>
                         <p>Independence Avenue</p>
@@ -256,34 +257,38 @@
         
         </section> <!-- END GALLERY -->
         <section class="reviews" id="reviews"> <!-- START REVIEWS -->
-            <div class="text">
+            <div class="text" data-aos="fade-right"
+            data-aos-delay="600">
                 <span>Opinions of our clients</span>
                 <h3>"This Getaway just did one thing wrong: finish"</h3>
                 <p>@vinsmake. Our first client.</p>
             </div>
             <div class="clients">
-                <article>
+                <article data-aos="zoom-in-down">
                     <img src="src/users/user1.jpg" loading="lazy">
                     <div class="comment">
                     <p>"This Getaway just did one thing wrong: finish"</p>
                     <span>@vinsmake</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down"
+                data-aos-delay="300">
                     <img src="src/users/user2.jpg" loading="lazy">
                     <div class="comment">
                     <p>"Tortas Toño's did just change my life, but the highlight was the MUSA"</p>
                     <span>@xboxeth</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down"
+                data-aos-delay="600">
                     <img src="src/users/user3.jpg" loading="lazy">
                     <div class="comment">
                     <p>"The neoclassical buildings made me wish I had somewhere to draw"</p>
                     <span>@otro.wey</span>
                     </div>
                 </article>
-                <article>
+                <article data-aos="zoom-in-down"
+                data-aos-delay="900">
                     <img src="src/users/user4.jpg" loading="lazy">
                     <div class="comment">
                     <p>"I want to come back and invite everyone to the Cineteca"</p>
@@ -408,5 +413,14 @@
     </main>
 
     <script src="js/global.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
+    <script>
+    AOS.init({
+        duration: 2000,
+        offset: 150,
+    });
+
+        
+    </script>
 </body>
 </html>
