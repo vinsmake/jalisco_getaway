@@ -2,13 +2,14 @@
     //sticks the nav bar on top, makes the background transparent and blur
     position: sticky;
     top: 0px;
+
     background-color: $background--dark--transparent;
     backdrop-filter: blur(2px);
     box-shadow: 0px 4px 5px 5px #11161C; //shadow to make it easy to see
 
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
     height: 3rem;
@@ -60,7 +61,43 @@
         margin: 0.5rem;
     }
 }
+
+/* hamburguer */
+.hamburguer {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    cursor: pointer;
+    @media (max-width: 920px) {
+        display: block;
+    }
+    img {
+        width: 2rem;
+        height: 2rem;
+        margin: auto;
+    }
 }
+}
+/* nav var mobile */
+@media (max-width: 920px) {
+    .header {
+        position: sticky;
+        top: 0px;
 
+        .header__nav {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 99%;
+            background: $background--dark--transparent;
+            display: flex;
+            flex-direction: column;
 
+            a {
+                margin: auto;
+            }
+
+        }
+    }
+}
 

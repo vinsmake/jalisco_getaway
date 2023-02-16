@@ -45,3 +45,14 @@
     }
 }
 }
+
+@media (max-width: 920px) {
+    .gallery {
+        width: 95%;
+}
+}
+@media (max-width: 480px) {
+    .gallery {
+        @include grid(1);
+}
+}

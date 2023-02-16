@@ -69,3 +69,19 @@
         }
     }
 }
+
+@media (max-width: 920px) {
+    .footer {
+    .content {
+        padding-top: 1rem;
+        @include grid(2);
+    }
+}
+}
+@media (max-width: 480px) {
+    .footer {
+        .content {
+            @include grid(1);
+        }
+    }
+}

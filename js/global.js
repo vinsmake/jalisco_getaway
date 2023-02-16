@@ -1,2 +1,2 @@
 //is it running?
-console.log("JavaScript is running.");
+console.log("JavaScript Global is running.");

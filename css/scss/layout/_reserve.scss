@@ -29,3 +29,24 @@
         
     }
 }
+
+@media (max-width: 1440px) {
+    
+}
+@media (max-width: 920px) {
+    .reserve {
+        width: 95%;
+            form {
+                grid-template-columns: 1fr 1fr;
+            }
+    }
+}
+@media (max-width: 480px) {
+    .reserve {
+        width: 95%;
+            form {
+                grid-template-columns: 1fr;
+            }
+    }
+}
+
