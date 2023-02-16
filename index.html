@@ -28,7 +28,7 @@
         </div>
         <!-- END LOGO -->
         <!-- START NAV-LINKS -->
-        <nav class="header__nav">
+        <nav class="header__nav" id="header__nav">
             <a href="#about">About</a>
             <a href="#visit">Must-visit</a>
             <a href="#experiences">Experiences</a>
@@ -78,11 +78,11 @@
         </section>  <!-- END RESERVE FORM -->
         <section class="about" id="about"> <!-- START ABOUT -->
             <div class="video">
-                <iframe muted="muted" src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- autoplay=0 mean not autoplay, &mute=1 means muted, both are booleans with 0 or 1 valor. start=4 means that starts in the second 4  -->
+                <iframe class="youtube" muted="muted" src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- autoplay=0 mean not autoplay, &mute=1 means muted, both are booleans with 0 or 1 valor. start=4 means that starts in the second 4  -->
                 <div class="controls">
-                    <span data-src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4"></span>
-                    <span data-src="https://www.youtube.com/embed/Vyd-xYVyq00?autoplay=1&mute=1"></span>
-                    <span data-src="https://www.youtube.com/embed/QGAcfpmY5j0?autoplay=1&mute=1"></span>
+                    <span class="youtube--link" data-src="https://www.youtube.com/embed/gFANFTYrPRg?autoplay=1&mute=1&start=4"></span>
+                    <span class="youtube--link" data-src="https://www.youtube.com/embed/Vyd-xYVyq00?autoplay=1&mute=1"></span>
+                    <span class="youtube--link" data-src="https://www.youtube.com/embed/QGAcfpmY5j0?autoplay=1&mute=1"></span>
                 </div>
             </div>
             <div class="info">
@@ -415,7 +415,7 @@
         </footer><!-- END FOOTER -->
     </main>
 
-    <script src="js/global.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/hamburguer.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
     <script>

@@ -1,3 +1,4 @@
+
 .header {
     //sticks the nav bar on top, makes the background transparent and blur
     position: sticky;
@@ -35,7 +36,7 @@
         }
 //start navegation links
     .header__nav {
-        display: flex;
+
         justify-content: center;
         align-items: center;
 
@@ -89,9 +90,10 @@
             left: 0;
             right: 0;
             top: 99%;
+            flex-direction: column;
             background: $background--dark--transparent;
             display: flex;
-            flex-direction: column;
+
 
             a {
                 margin: auto;
