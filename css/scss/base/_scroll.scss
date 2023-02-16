@@ -14,4 +14,13 @@ html {
         border-radius: 8px;
         border: 3px solid $scrollbar--background;
     }
+
+
+
+    @media (max-width: 480px) {
+        &::-webkit-scrollbar { //scrollbar width
+            width: 0rem;
+        }
+    }
 }
+

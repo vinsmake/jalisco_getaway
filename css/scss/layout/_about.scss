@@ -57,3 +57,18 @@
         }
     }
 }
+
+@media (max-width: 920px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        width: 95%;
+        
+    }
+}

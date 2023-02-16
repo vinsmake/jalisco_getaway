@@ -24,6 +24,11 @@ html::-webkit-scrollbar-thumb {
   border-radius: 8px;
   border: 3px solid #161D27;
 }
+@media (max-width: 480px) {
+  html::-webkit-scrollbar {
+    width: 0rem;
+  }
+}
 
 /* --START--BOX-SIZING AND REM CONFIG-- */
 html {
@@ -219,6 +224,20 @@ h3 {
   font-weight: 400;
 }
 
+@media (max-width: 920px) {
+  .hero {
+    height: 17rem;
+  }
+  .hero .hero__content .hero__content--title {
+    font-size: 3rem;
+  }
+  .hero .hero__content:nth-child(2) {
+    font-size: 2rem;
+  }
+  .hero .hero__content:nth-child(3) {
+    font-size: 1rem;
+  }
+}
 .reserve {
   background-color: #2E3947;
   box-shadow: 0px 4px 10px #2E3947;
@@ -253,6 +272,22 @@ h3 {
   cursor: pointer;
 }
 
+@media (max-width: 920px) {
+  .reserve {
+    width: 95%;
+  }
+  .reserve form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .reserve {
+    width: 95%;
+  }
+  .reserve form {
+    grid-template-columns: 1fr;
+  }
+}
 .about {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -331,6 +366,17 @@ h3 {
   cursor: pointer;
 }
 
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    width: 95%;
+  }
+}
 .visit {
   display: grid;
   gap: 1rem;
@@ -343,7 +389,7 @@ h3 {
   box-shadow: 0px 4px 10px #2E3947;
   border-radius: 8px;
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -408,6 +454,16 @@ h3 {
   cursor: pointer;
 }
 
+@media (max-width: 920px) {
+  .visit {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
 .experiences {
   width: 100%;
   height: 15rem;
@@ -455,6 +511,40 @@ h3 {
   cursor: pointer;
 }
 
+@media (max-width: 920px) {
+  .experiences {
+    height: auto;
+    padding: 1rem;
+    background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 30% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .experiences .content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .experiences {
+    height: auto;
+    padding: 1rem;
+    background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 40% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .experiences .content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
 .gallery {
   display: grid;
   gap: 1rem;
@@ -507,6 +597,21 @@ h3 {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 920px) {
+  .gallery {
+    width: 95%;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
 .reviews {
   display: flex;
   gap: 2rem;
@@ -561,6 +666,11 @@ h3 {
   font-weight: 200;
 }
 
+@media (max-width: 920px) {
+  .reviews {
+    flex-direction: column;
+  }
+}
 .banner {
   width: 100%;
   height: auto;
@@ -615,6 +725,17 @@ h3 {
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  .banner span {
+    font-size: 1.5rem;
+  }
+  .banner h3 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 1.5rem;
+  }
+}
 .footer .content {
   display: grid;
   gap: 1rem;
@@ -683,6 +804,28 @@ h3 {
   font-family: "Cinzel", serif;
   font-weight: 200;
   text-align: center;
+}
+
+@media (max-width: 920px) {
+  .footer .content {
+    padding-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .footer .content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,3 +38,31 @@
 }//content
 }//experiences
 
+
+
+@media (max-width: 920px) {
+    .experiences {
+        height: auto;
+        padding: 1rem;
+        background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 30% 0%;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .content {
+            @include grid(3);
+        }
+    }
+}
+@media (max-width: 480px) {
+    .experiences {
+        height: auto;
+        padding: 1rem;
+        background: url(../src/img/guadalajara/mariachi.jpg) no-repeat 40% 0%;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .content {
+            @include grid(2);
+        }
+    }
+}

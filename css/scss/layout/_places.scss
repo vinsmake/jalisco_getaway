@@ -4,7 +4,7 @@
     box-shadow: $section--shadow;
     border-radius: 8px;
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -68,5 +68,12 @@
     article {
         @include place;
         @include section;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .visit {
+        @include grid(1);
     }
 }
