@@ -174,7 +174,7 @@ h3 {
     top: 99%;
     flex-direction: column;
     background: rgba(22, 29, 39, 0.95);
-    display: flex;
+    display: none;
   }
   .header .header__nav a {
     margin: auto;
