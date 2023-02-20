@@ -20,6 +20,10 @@ hamburguer.onclick = () => { //arrow function: When click, excecute
 /*     nav.classList.toggle("active"); */
 
 
-window.onscroll = () => { //when scroll, do:
+window.onscroll = () => {
+    if (x.matches){ //when scroll, do:
     nav.style.display = "none";
+    }
 };
+
+var x = window.matchMedia("(max-width: 920px)");
